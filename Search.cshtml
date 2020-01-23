@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Search</title>
+</head>
+<body>
+    @{
+        var sel = ViewData["Seller"] as SellerDependencyInjectionDemo.Model.Seller;
+
+    }
+
+    <h1>Employee</h1>
+    <table border="1" cellpadding="10" cellspacing="3">
+        <tr>
+            <td>    ID        </td>
+            <td>    Name      </td>
+            <td>    Password  </td>
+            <td>    Gstin     </td>
+            <td>    Compname  </td>
+            <td>    Details   </td>
+            <td>    Caddress  </td>
+            <td>    Cweb      </td>
+            <td>    Email     </td>
+            <td>    Dept      </td>
+        </tr>
+
+        <tr>
+            <td>    @sel.Id       </td>
+            <td>    @sel.Name     </td>
+            <td>    @sel.Pswd     </td>
+            <td>    @sel.Gstin    </td>
+            <td>    @sel.Compname </td>
+            <td>    @sel.Det      </td>
+            <td>    @sel.Sadd     </td>
+            <td>    @sel.Cweb     </td>
+            <td>    @sel.Email    </td>
+            <td>    @sel.Phno     </td>
+
+        </tr>
+    </table>
+</body>
+</html>
+
